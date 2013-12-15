@@ -3,8 +3,8 @@
     <item android:state_enabled="false"
           android:drawable="@drawable/btn_inactive"/>
     <item android:state_focused="true"
-          android:drawable="@drawable/btn_active_pressed"/>
+          android:drawable="@drawable/btn_inactive"/>
     <item android:state_pressed="true"
-          android:drawable="@drawable/btn_active_pressed"/>
-    <item android:drawable="@drawable/btn_active"/>
+          android:drawable="@drawable/btn_inactive"/>
+    <item android:drawable="@drawable/btn_inactive"/>
 </selector>

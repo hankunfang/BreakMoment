@@ -27,9 +27,11 @@ import android.widget.Toast;
 public class MainActivity extends Activity {
 
     private LinearLayout        ll_settime;
+    private LinearLayout        ll_canceltime;
     private TextView mTextView;
     private Calendar calendar;
     private String INTENT_NAME = "com.application.breakmoment.intent.action";
+    private String              alarmService = "com.application.breakmoment.alarmservice";
     private static AlarmManager alarmManager;
     private Boolean             canExit     = false;
     
@@ -40,13 +42,14 @@ public class MainActivity extends Activity {
         
         mTextView = (TextView)this.findViewById(R.id.mText);
         ll_settime = (LinearLayout) this.findViewById(R.id.ll_alarmset_bt);
+        ll_canceltime = (LinearLayout) this.findViewById(R.id.ll_cancel_bt);
 
         calendar = Calendar.getInstance();
         
         final SharedPreferences sharedPreferences = getSharedPreferences(getPackageName(), 0);
         String time = sharedPreferences.getString("time", null);
 
-        if (time != null) {
+        if (time != null && !time.equals("")) {
             mTextView.setText(getResources().getString(R.string.timeTips) + time);
         }
         
@@ -82,7 +85,18 @@ public class MainActivity extends Activity {
                 },hour,minute,true).show();
                 canExit = false;
             }
+        });
 
+        ll_canceltime.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent serviceIntent = new Intent(alarmService);
+                stopService(serviceIntent);
+
+                // TODO：取消闹钟，修改sharePreference值
+            }
 
         });
 

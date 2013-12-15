@@ -12,7 +12,7 @@
         android:layout_marginBottom="20dp"
         android:layout_marginTop="30dp"
         android:src="@drawable/alarm2"/>
-    
+
     <LinearLayout 
         	android:id="@+id/ll_alarmset_bt"
         	android:layout_height="45dp"
@@ -31,7 +31,7 @@
             android:textSize="@dimen/text_size_large"
             android:textColor="@color/white"/>
     </LinearLayout>
-    
+
     <TextView  
 	    android:id="@+id/mText"
 	    android:layout_width="match_parent" 
@@ -40,5 +40,22 @@
 	    android:text="@string/setTips"
 	    android:gravity="center_horizontal"
     />
+    
+    <LinearLayout android:layout_width="wrap_content"
+                  android:background="@drawable/bg_button_fake" 
+                  android:layout_marginTop="10dp"
+                  android:layout_marginBottom="15dp" 
+                  android:padding="5dp" android:layout_height="45dp"
+                  android:id="@+id/ll_cancel_bt">
+        <TextView
+           		android:id="@+id/tv_cancel_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/cancelTimeButton"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"/>
+    </LinearLayout>
 
 </LinearLayout>
