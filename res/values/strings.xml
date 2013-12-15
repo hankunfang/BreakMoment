@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BreakMoment</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="setTimeButton">Set Time</string>
+    <string name="setTips">Please set your time. Happy every day!</string>
+    <string name="timeTips">Current setting time:</string>
+    
+    <string name="alarmExitButton">Exit Alarm</string>
+    <string name="shakeTips">Shake for exiting alarm</string>
+    <string name="hint_back_to_exit">Press Back button once again to exit.</string>
+    <string name="timepicker_dialog_canel">Cancel</string>
+
+</resources>

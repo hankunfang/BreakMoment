@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BreakMoment</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="setTimeButton">setTime</string>
+    <string name="cancelButton">Cancel Time</string>
+    
+    <string name="alarmExitButton">关闭闹钟</string>
+    <string name="shakeTips">摇一摇手机关闭闹钟</string>
+    
+    <string name="hint_back_to_exit">再按一次退出键退出.</string>
+    
+    <string name="timepicker_dialog_canel">取消</string>
+
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center">
+
+    <ImageView
+            android:id="@+id/iv_alarm"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/alarm1"
+            android:contentDescription=""/>
+
+    <LinearLayout 
+        	android:id="@+id/ll_alarmexit_bt"
+        	android:layout_height="45dp"
+        	android:layout_width="wrap_content"
+            android:background="@drawable/bg_button"
+            android:layout_marginTop="10dp"
+            android:padding="10dp" 
+            >
+        <TextView
+            android:id="@+id/tv_exit_bt" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/alarmExitButton"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout 
+        	android:id="@+id/ll_alarmexit_shake"
+        	android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+        	android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="5dp" 
+            >
+        <ImageView
+            android:layout_height="wrap_content" 
+            android:layout_width="wrap_content"
+      		android:scaleType="fitCenter"
+            android:layout_gravity="center_vertical"
+            android:contentDescription=""
+            android:src="@drawable/shake"/>
+        <TextView
+            android:id="@+id/tv_exit_shake" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/shakeTips"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+
